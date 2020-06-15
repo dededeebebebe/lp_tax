@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+    // font-family: $font-primary;
+    color: green;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+// .container {
+//     max-width: 1000px;
+//     margin: 0 auto;
+// }
