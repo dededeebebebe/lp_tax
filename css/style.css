@@ -81,4 +81,70 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score-title {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.score-title:before, .score-title:after {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/wad_of_bills.png);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.score .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  max-width: 1000px;
+  border: solid 5px #FFFFFF;
+  border-radius: 5px;
+}
+
+.score .box-txt {
+  font-size: 3rem;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.score .inner-result._number {
+  font-size: 16rem;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.score .inner-result._chara {
+  font-size: 10rem;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 /*# sourceMappingURL=style.css.map */
