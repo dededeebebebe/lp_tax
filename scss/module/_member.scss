@@ -1,0 +1,26 @@
+.member {
+    display: flex;
+    justify-content: center;
+    background-color: $color_white01;
+
+    .outer {
+        display: flex;
+        width: 80vw;
+        max-width: 1000px;
+
+        .inner {
+
+            &-name {
+                font-size: 3.2rem;
+            }
+            &-txt {
+            }
+
+            .box {
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+}
