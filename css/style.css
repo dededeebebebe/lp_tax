@@ -147,4 +147,63 @@ img {
   font-weight: 700;
   font-style: normal;
 }
+
+.index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  max-width: 1000px;
+}
+
+.index .outer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index .outer-txt {
+  font-size: 3rem;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.index .outer-txt._3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.index .outer-txt._4 {
+  display: inline-block;
+}
+
+.index .outer-txt._5 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.index .outer-txt._6 {
+  display: inline-block;
+}
+
+.index .outer img {
+  display: inline;
+}
 /*# sourceMappingURL=style.css.map */

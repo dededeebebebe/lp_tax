@@ -1,0 +1,35 @@
+.index {
+    display: flex;
+    justify-content: center;
+
+    .outer {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        max-width: 1000px;
+
+        .box {
+            display: flex;
+            align-items: center;
+        }
+        &-txt {
+            font-size: 3rem;
+            @include adobefont-chikumaru;
+        }
+        &-txt._3 {
+            align-self: flex-end;
+        }
+        &-txt._4 {
+            display: inline-block;
+        }
+        &-txt._5 {
+            align-self: flex-end;
+        }
+        &-txt._6 {
+            display: inline-block;
+        }
+        img {
+            display: inline;
+        }
+    }
+}
