@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.08em;
   color: color_black01;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -25,5 +25,60 @@ ul li {
 
 img {
   max-width: 100%;
+}
+
+.wrap {
+  background-color: #C4CCEB;
+}
+
+.header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .inner-txt {
+  font-size: 2.0rem;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fv {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fv-title {
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
