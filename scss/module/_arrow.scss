@@ -1,8 +1,13 @@
 .arrow {
     display: flex;
     justify-content: center;
+    margin: 5vw 0;
+
+    @include media("sp") {
+        margin: 25vw 0;
+    }
 
     i {
-        font-size: 6rem;
+        font-size: 9rem;
     }
 }

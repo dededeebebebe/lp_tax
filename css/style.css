@@ -112,10 +112,17 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 5vw 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .arrow {
+    margin: 25vw 0;
+  }
 }
 
 .arrow i {
-  font-size: 6rem;
+  font-size: 9rem;
 }
 
 .score {
