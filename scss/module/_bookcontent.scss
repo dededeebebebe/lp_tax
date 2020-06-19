@@ -15,6 +15,9 @@
             font-size: 8rem;
             padding: 50px 0;
             @include adobefont-chikumaru;
+            @include media("sp") {
+                font-size: 2.3rem;
+            }
             span:before, span:after {
                 position: absolute;
                 width: 100px;
@@ -38,14 +41,30 @@
         .inner {
             display: flex;
             padding: 50px 0;
-            img {
-                width: 33%;
+
+            @include media("sp") {
+                flex-direction: column;
+                align-items: center;
             }
 
+            img {
+                width: 33%;
+                align-self: flex-start;
+
+                @include media("sp") {
+                    align-self: center;
+                    width: 80%;
+                    max-width: 600px;;
+                }
+            }
             .box {
                 width: 67%;
                 padding: 0 3vw;
-                // text-align: center;
+
+                @include media("sp") {
+                    width: 80%;
+                    padding: 50px 0;
+                }
 
                 &-txt {
                     font-size: 2rem;
@@ -53,6 +72,10 @@
                     letter-spacing: .2rem;
                     line-height: 1.6;
                     margin-bottom: 30px;
+
+                    @include media("sp") {
+                        font-size: 1.6rem;
+                    }
                 }
                 &-btn {
                     display: block;
@@ -68,6 +91,10 @@
                     box-shadow: 8px 8px $color-black01;
                     cursor: pointer;
                     transition-duration: 0.2s;
+
+                    @include media("sp") {
+                        width: 100%;
+                    }
                 }
                 &-btn:active {
                     box-shadow: none;
