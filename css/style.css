@@ -309,9 +309,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 150px;
 }
 
 .bookcontent .outer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,39 +325,84 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .bookcontent .outer-title {
   font-size: 8rem;
+  padding: 50px 0;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.bookcontent .outer-title span:before, .bookcontent .outer-title span:after {
+  position: absolute;
+  width: 100px;
+  content: '';
+  border: solid 6px #FFFFFF;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.bookcontent .outer-title span:before {
+  -webkit-transform: rotate(-57deg);
+          transform: rotate(-57deg);
+  top: 140px;
+  right: 10px;
+}
+
+.bookcontent .outer-title span:after {
+  -webkit-transform: rotate(57deg);
+          transform: rotate(57deg);
+  top: 140px;
+  left: -10px;
 }
 
 .bookcontent .outer .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px 0;
 }
 
 .bookcontent .outer .inner img {
-  width: 50%;
+  width: 33%;
 }
 
 .bookcontent .outer .inner .box {
-  width: 50%;
+  width: 67%;
+  padding: 0 3vw;
 }
 
 .bookcontent .outer .inner .box-txt {
   font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .bookcontent .outer .inner .box-btn {
-  border: none;
-  border-radius: 10px;
+  display: block;
+  margin: 100px auto;
+  width: 60%;
+  padding: 15px 0;
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-radius: 45px;
+  -webkit-box-shadow: 8px 8px #000000;
+          box-shadow: 8px 8px #000000;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.bookcontent .outer .inner .box-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .member {
