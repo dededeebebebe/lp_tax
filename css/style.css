@@ -541,9 +541,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vw;
+  max-height: 200px;
+  min-height: 80px;
 }
 
 .footer-txt {
   display: inline-block;
+  padding: 0 15px;
 }
 /*# sourceMappingURL=style.css.map */
