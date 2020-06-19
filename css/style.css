@@ -227,6 +227,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 60px 0;
 }
 
 .index .outer {
@@ -250,11 +251,36 @@ img {
           align-items: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .index .outer .box img {
+    display: none;
+  }
+}
+
+.index .outer .box img._1 {
+  margin-left: 5vw;
+}
+
+.index .outer .box img._2 {
+  margin-left: 10vw;
+}
+
 .index .outer-txt {
   font-size: 3rem;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
+  padding: 30px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .index .outer-txt {
+    font-size: 1.6rem;
+  }
+}
+
+.index .outer-txt._1 {
+  margin-left: 10vw;
 }
 
 .index .outer-txt._3 {
@@ -273,10 +299,7 @@ img {
 
 .index .outer-txt._6 {
   display: inline-block;
-}
-
-.index .outer img {
-  display: inline;
+  margin-left: 10vw;
 }
 
 .bookcontent {

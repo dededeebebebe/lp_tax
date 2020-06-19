@@ -1,20 +1,38 @@
 .index {
     display: flex;
     justify-content: center;
+    padding: 60px 0;
 
     .outer {
         display: flex;
         flex-direction: column;
         width: 80vw;
         max-width: 1000px;
-
         .box {
             display: flex;
             align-items: center;
+            img {
+                @include media("sp") {
+                    display: none;
+                }
+            }
+            img._1 {
+                margin-left: 5vw;
+            }
+            img._2 {
+                margin-left: 10vw;
+            }
         }
         &-txt {
             font-size: 3rem;
             @include adobefont-chikumaru;
+            padding: 30px 0;
+            @include media("sp") {
+                font-size: 1.6rem;
+            }
+        }
+        &-txt._1 {
+            margin-left: 10vw;
         }
         &-txt._3 {
             align-self: flex-end;
@@ -27,9 +45,7 @@
         }
         &-txt._6 {
             display: inline-block;
-        }
-        img {
-            display: inline;
+            margin-left: 10vw;
         }
     }
 }
