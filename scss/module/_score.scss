@@ -2,11 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
 
     &-title {
         font-size: 50px;
         font-family: $font-montserrat;
+        padding: 100px 0;
+        @include media("sp") {
+            font-size: 1.9rem;
+        }
     }
     &-title:before, &-title:after {
         content: '';
@@ -16,20 +19,34 @@
         background-image: url(../img/wad_of_bills.png);
         background-size: contain;
         vertical-align: middle;
+        @include media("sp") {
+            width: 35px;
+            height: 35px;
+        }
     }
-
+    &-title:before {
+        margin-right: 20px;
+    }
+    &-title:after {
+        margin-left: 20px;
+    }
     .box {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 80vw;
         max-width: 1000px;
-        border: solid 5px $color_white01;
-        border-radius: 5px;
+        padding: 50px 100px;
+        border: solid 10px $color_white01;
+        border-radius: 20px;
 
         &-txt {
             font-size: 3rem;
+            margin-top: 20px;
             @include adobefont-chikumaru;
+            @include media("sp") {
+                font-size: 1.8rem;
+            }
         }
 
     }
@@ -38,10 +55,16 @@
         &-result._number {
             font-size: 16rem;
             @include adobefont-chikumaru;
+            @include media("sp") {
+                font-size: 8rem;
+                }
             }
         &-result._chara {
             font-size: 10rem;
             @include adobefont-chikumaru;
+            @include media("sp") {
+                font-size: 5rem;
+            }
             }
     }
 }

@@ -15,6 +15,12 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 3rem;
+  }
+}
+
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -53,6 +59,10 @@ img {
           align-items: center;
 }
 
+.header .inner img {
+  margin-right: 14px;
+}
+
 .header .inner-txt {
   font-size: 2.0rem;
   font-family: fot-tsukubrdgothic-std,sans-serif;
@@ -64,13 +74,29 @@ img {
   width: 80vw;
   max-width: 1000px;
   margin: 0 auto;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .fv {
+    padding-top: 0px;
+  }
 }
 
 .fv-title {
+  display: inline-block;
+  font-size: 8rem;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
+  line-height: 2;
   background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .fv-title {
+    font-size: 2.6rem;
+  }
 }
 
 .arrow {
@@ -80,6 +106,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.arrow i {
+  font-size: 6rem;
 }
 
 .score {
@@ -98,6 +128,13 @@ img {
 .score-title {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .score-title {
+    font-size: 1.9rem;
+  }
 }
 
 .score-title:before, .score-title:after {
@@ -108,6 +145,21 @@ img {
   background-image: url(../img/wad_of_bills.png);
   background-size: contain;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .score-title:before, .score-title:after {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.score-title:before {
+  margin-right: 20px;
+}
+
+.score-title:after {
+  margin-left: 20px;
 }
 
 .score .box {
@@ -123,15 +175,23 @@ img {
           align-items: center;
   width: 80vw;
   max-width: 1000px;
-  border: solid 5px #FFFFFF;
-  border-radius: 5px;
+  padding: 50px 100px;
+  border: solid 10px #FFFFFF;
+  border-radius: 20px;
 }
 
 .score .box-txt {
   font-size: 3rem;
+  margin-top: 20px;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .score .box-txt {
+    font-size: 1.8rem;
+  }
 }
 
 .score .inner-result._number {
@@ -141,11 +201,23 @@ img {
   font-style: normal;
 }
 
+@media only screen and (max-width: 767px) {
+  .score .inner-result._number {
+    font-size: 8rem;
+  }
+}
+
 .score .inner-result._chara {
   font-size: 10rem;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .score .inner-result._chara {
+    font-size: 5rem;
+  }
 }
 
 .index {
@@ -244,12 +316,19 @@ img {
   display: flex;
 }
 
+.bookcontent .outer .inner img {
+  width: 50%;
+}
+
+.bookcontent .outer .inner .box {
+  width: 50%;
+}
+
 .bookcontent .outer .inner .box-txt {
   font-size: 2rem;
 }
 
 .bookcontent .outer .inner .box-btn {
-  width: 400px;
   border: none;
   border-radius: 10px;
   font-size: 4rem;
@@ -272,6 +351,10 @@ img {
   display: flex;
   width: 80vw;
   max-width: 1000px;
+}
+
+.member .outer .inner {
+  width: 50%;
 }
 
 .member .outer .inner-name {

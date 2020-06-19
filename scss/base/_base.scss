@@ -9,6 +9,9 @@ body {
     letter-spacing: 0.08em;
     color: color_black01;
     font-family: $font-yugothic;
+    @include media("tb") {
+        font-size: 3rem;
+    }
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;

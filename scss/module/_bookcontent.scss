@@ -17,13 +17,18 @@
         .inner {
             display: flex;
 
+            img {
+                width: 50%;
+            }
+
             .box {
+                width: 50%;
 
                 &-txt {
                     font-size: 2rem;
                 }
                 &-btn {
-                    width: 400px;
+                    // width: 400px;
                     border: none;
                     border-radius: 10px;
                     font-size: 4rem;

@@ -7,6 +7,10 @@
     .inner {
         display: flex;
         align-items: center;
+
+        img {
+            margin-right: 14px;
+        }
         
         &-txt {
             font-size: 2.0rem;
