@@ -68,12 +68,12 @@ img {
   width: 80vw;
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 7vw;
 }
 
 @media only screen and (max-width: 767px) {
   .fv {
-    padding-top: 0px;
+    max-width: 400px;
   }
 }
 
@@ -84,13 +84,25 @@ img {
   font-weight: 700;
   font-style: normal;
   line-height: 2;
-  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 980px) {
+  .fv-title {
+    font-size: 6rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .fv-title {
     font-size: 2.6rem;
   }
+}
+
+.fv-title span {
+  display: inline-block;
+  margin: 1vw 0;
+  padding: 1vw 2vw;
+  background-color: #FFFFFF;
 }
 
 .arrow {

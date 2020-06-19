@@ -2,10 +2,10 @@
     width: 80vw;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 7vw;
 
     @include media("sp") {
-        padding-top: 0px;
+        max-width: 400px;
     }
 
     &-title {
@@ -13,10 +13,19 @@
         font-size: 8rem;
         @include adobefont-chikumaru;
         line-height: 2;
-        background-color: $color_white01;
 
+        @include media("tb") {
+            font-size: 6rem;
+        }
         @include media("sp") {
             font-size: 2.6rem;
+        }
+        
+        span {
+            display: inline-block;
+            margin: 1vw 0;
+            padding: 1vw 2vw;
+            background-color: $color_white01;
         }
     }
 }
