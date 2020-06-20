@@ -37,9 +37,13 @@
         align-items: center;
         width: 90vw;
         max-width: 1000px;
-        padding: 6% 0;
+        padding: 8% 0;
         border: solid 15px $color_white01;
         border-radius: 40px;
+        
+        @include media("sp") {
+            border: solid 10px $color_white01;
+        }
 
         &-txt {
             width: 80%;

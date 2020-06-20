@@ -188,9 +188,15 @@ img {
           align-items: center;
   width: 90vw;
   max-width: 1000px;
-  padding: 6% 0;
+  padding: 8% 0;
   border: solid 15px #FFFFFF;
   border-radius: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .score .box {
+    border: solid 10px #FFFFFF;
+  }
 }
 
 .score .box-txt {
@@ -515,14 +521,14 @@ img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: 80%;
+    width: 90%;
     max-width: 400px;
   }
 }
 
 .bookcontent .outer .inner .box {
   width: 67%;
-  padding: 0 3vw;
+  padding: 0 4vw;
 }
 
 @media only screen and (max-width: 767px) {

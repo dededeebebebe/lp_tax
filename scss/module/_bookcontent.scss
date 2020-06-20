@@ -29,41 +29,6 @@
             @include media("sp") {
                 font-size: 2.3rem;
             }
-            // span {
-            //     width: 100px;
-            //     position: absolute;
-            //     border: solid 6px $color-white01;
-            //     border-radius: 10px;
-            //     background-color: $color-white01;
-            // }
-            // span:first-of-type {
-            //     transform: rotate(-55deg);
-            //     top: 10px;
-            //     right: 10px;
-            // }
-            // span:last-of-type {
-            //     transform: rotate(55deg);
-            //     top: 10px;
-            //     left: 10px;
-            // }
-            // span:before, span:after {
-            //     position: absolute;
-            //     width: 100px;
-            //     content: '';
-            //     border: solid 6px $color-white01;
-            //     border-radius: 10px;
-            //     background-color: $color-white01;
-            // }
-            // span:before {
-            //     transform: rotate(-57deg);
-            //     top: 140px;
-            //     right: 10px;
-            // }
-            // span:after {
-            //     transform: rotate(57deg);
-            //     top: 140px;
-            //     left: -10px;
-            // }
         }
         &-title:before, &-title:after {
             position: absolute;
@@ -126,13 +91,13 @@
 
                 @include media("sp") {
                     align-self: center;
-                    width: 80%;
+                    width: 90%;
                     max-width: 400px;;
                 }
             }
             .box {
                 width: 67%;
-                padding: 0 3vw;
+                padding: 0 4vw;
 
                 @include media("sp") {
                     width: 90%;
