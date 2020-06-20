@@ -460,7 +460,7 @@ img {
 @media only screen and (max-width: 767px) {
   .bookcontent .outer-title:before {
     top: 80px;
-    right: 80px;
+    right: 10%;
   }
 }
 
@@ -481,7 +481,7 @@ img {
 @media only screen and (max-width: 767px) {
   .bookcontent .outer-title:after {
     top: 80px;
-    left: 80px;
+    left: 10%;
   }
 }
 
@@ -642,6 +642,8 @@ img {
 @media only screen and (max-width: 767px) {
   .member .outer .inner img {
     width: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 

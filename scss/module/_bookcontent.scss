@@ -93,7 +93,7 @@
             }
             @include media("sp") {
                 top: 80px;
-                right: 80px;
+                right: 10%;
             }
         }
         &-title:after {
@@ -107,7 +107,7 @@
             }
             @include media("sp") {
                 top: 80px;
-                left: 80px;
+                left: 10%;
             }
         }
 
