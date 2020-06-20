@@ -188,14 +188,14 @@ img {
           align-items: center;
   width: 90vw;
   max-width: 1000px;
-  padding: 7%;
-  border: solid 10px #FFFFFF;
+  padding: 6% 0;
+  border: solid 15px #FFFFFF;
   border-radius: 40px;
 }
 
 .score .box-txt {
   width: 80%;
-  margin-top: 20px;
+  margin-top: 5vw;
   font-size: 3rem;
   line-height: 1.7;
   font-family: fot-tsukubrdgothic-std,sans-serif;
@@ -206,6 +206,18 @@ img {
 @media only screen and (max-width: 767px) {
   .score .box-txt {
     font-size: 1.8rem;
+    margin-top: 0;
+    padding: 10% 0;
+  }
+}
+
+.score .inner {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .score .inner {
+    width: 70%;
   }
 }
 
@@ -234,6 +246,12 @@ img {
   .score .inner-result._chara {
     font-size: 5rem;
   }
+}
+
+.score .inner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20px;
 }
 
 .index {
@@ -619,6 +637,12 @@ img {
 
 .member .outer .inner img {
   padding: 30px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .member .outer .inner img {
+    width: 80%;
+  }
 }
 
 .member .outer .inner-name {

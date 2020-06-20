@@ -37,25 +37,32 @@
         align-items: center;
         width: 90vw;
         max-width: 1000px;
-        // padding: 10vw;
-        padding: 7%;
-        border: solid 10px $color_white01;
+        padding: 6% 0;
+        border: solid 15px $color_white01;
         border-radius: 40px;
 
         &-txt {
             width: 80%;
-            margin-top: 20px;
+            margin-top: 5vw;
             font-size: 3rem;
             line-height: 1.7;
             @include adobefont-chikumaru;
             @include media("sp") {
                 font-size: 1.8rem;
+                margin-top: 0;
+                padding: 10% 0;
             }
         }
 
     }
 
-    .inner {        
+    .inner {
+        text-align: center;
+
+        @include media("sp") {
+            width: 70%;
+        }
+
         &-result._number {
             font-size: 16rem;
             line-height: 1;
@@ -71,5 +78,18 @@
                 font-size: 5rem;
             }
         }
+        img {
+            object-fit: cover;
+            height: 20px;
+        }
     }
+    // .inner:after {
+    //     content: '';
+    //     display: inline-block;
+    //     width: 100%;
+    //     height: 10px;
+    //     background-image: url(../img/bg-slash.png);
+    //     background-size: contain;
+    //     vertical-align: middle;
+    // }
 }
