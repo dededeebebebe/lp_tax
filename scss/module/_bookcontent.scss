@@ -1,40 +1,113 @@
 .bookcontent {
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 5vw;
+
+    @include media("sp") {
+        padding-bottom: 0;
+    }
 
     .outer {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
+        width: 90vw;
         max-width: 1200px;
+
+        @include media("sp") {
+            width: 100vw;
+        }
 
         &-title {
             font-size: 8rem;
             padding: 50px 0;
             @include adobefont-chikumaru;
+            @include media("tb") {
+                font-size: 4rem;
+            }
             @include media("sp") {
                 font-size: 2.3rem;
             }
-            span:before, span:after {
-                position: absolute;
-                width: 100px;
-                content: '';
-                border: solid 6px $color-white01;
-                border-radius: 10px;
-                background-color: $color-white01;
+            // span {
+            //     width: 100px;
+            //     position: absolute;
+            //     border: solid 6px $color-white01;
+            //     border-radius: 10px;
+            //     background-color: $color-white01;
+            // }
+            // span:first-of-type {
+            //     transform: rotate(-55deg);
+            //     top: 10px;
+            //     right: 10px;
+            // }
+            // span:last-of-type {
+            //     transform: rotate(55deg);
+            //     top: 10px;
+            //     left: 10px;
+            // }
+            // span:before, span:after {
+            //     position: absolute;
+            //     width: 100px;
+            //     content: '';
+            //     border: solid 6px $color-white01;
+            //     border-radius: 10px;
+            //     background-color: $color-white01;
+            // }
+            // span:before {
+            //     transform: rotate(-57deg);
+            //     top: 140px;
+            //     right: 10px;
+            // }
+            // span:after {
+            //     transform: rotate(57deg);
+            //     top: 140px;
+            //     left: -10px;
+            // }
+        }
+        &-title:before, &-title:after {
+            position: absolute;
+            width: 100px;
+            content: '';
+            border: solid 6px $color-white01;
+            border-radius: 10px;
+            background-color: $color-white01;
+            
+            @include media("tb") {
+                width: 75px;
+                border: solid 5px $color-white01;
             }
-            span:before {
-                transform: rotate(-57deg);
-                top: 140px;
-                right: 10px;
+            @include media("sp") {
+                width: 40px;
+                border: solid 3px $color-white01;
             }
-            span:after {
-                transform: rotate(57deg);
-                top: 140px;
-                left: -10px;
+        }
+        &-title:before {
+            transform: rotate(-57deg);
+            top: 140px;
+            right: 10px;
+            
+            @include media("tb") {
+                top: 100px;
+                right: 100px;
+            }
+            @include media("sp") {
+                top: 80px;
+                right: 80px;
+            }
+        }
+        &-title:after {
+            transform: rotate(57deg);
+            top: 140px;
+            left: -10px;
+            
+            @include media("tb") {
+                top: 100px;
+                left: 100px;
+            }
+            @include media("sp") {
+                top: 80px;
+                left: 80px;
             }
         }
 
@@ -54,7 +127,7 @@
                 @include media("sp") {
                     align-self: center;
                     width: 80%;
-                    max-width: 600px;;
+                    max-width: 400px;;
                 }
             }
             .box {
@@ -62,8 +135,8 @@
                 padding: 0 3vw;
 
                 @include media("sp") {
-                    width: 80%;
-                    padding: 50px 0;
+                    width: 90%;
+                    padding: 10% 0 0 0;
                 }
 
                 &-txt {
@@ -79,7 +152,7 @@
                 }
                 &-btn {
                     display: block;
-                    margin: 100px auto;
+                    margin: 20% auto;
                     width: 60%;
                     padding: 15px 0;
                     font-size: 4rem;
@@ -94,6 +167,7 @@
 
                     @include media("sp") {
                         width: 100%;
+                        padding: 10px 0;
                     }
                 }
                 &-btn:active {
