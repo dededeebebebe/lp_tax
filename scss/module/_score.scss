@@ -6,9 +6,10 @@
     &-title {
         font-size: 50px;
         font-family: $font-montserrat;
-        padding: 100px 0;
+        padding: 12vw 0;
         @include media("sp") {
             font-size: 1.9rem;
+            // padding-top: 0;
         }
     }
     &-title:before, &-title:after {
@@ -34,15 +35,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
+        width: 90vw;
         max-width: 1000px;
-        padding: 50px 100px;
+        // padding: 10vw;
+        padding: 7%;
         border: solid 10px $color_white01;
-        border-radius: 20px;
+        border-radius: 40px;
 
         &-txt {
-            font-size: 3rem;
+            width: 80%;
             margin-top: 20px;
+            font-size: 3rem;
+            line-height: 1.7;
             @include adobefont-chikumaru;
             @include media("sp") {
                 font-size: 1.8rem;
@@ -51,9 +55,10 @@
 
     }
 
-    .inner {
+    .inner {        
         &-result._number {
             font-size: 16rem;
+            line-height: 1;
             @include adobefont-chikumaru;
             @include media("sp") {
                 font-size: 8rem;
@@ -65,6 +70,6 @@
             @include media("sp") {
                 font-size: 5rem;
             }
-            }
+        }
     }
 }

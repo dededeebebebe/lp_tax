@@ -20,32 +20,44 @@
                 margin-left: 5vw;
             }
             img._2 {
-                margin-left: 10vw;
+                margin-left: 10vw;   
             }
         }
         &-txt {
             font-size: 3rem;
             @include adobefont-chikumaru;
-            padding: 30px 0;
+            padding: 3vw 0;
             @include media("sp") {
                 font-size: 1.6rem;
             }
         }
         &-txt._1 {
             margin-left: 10vw;
+            @include media("xs") {
+                margin-left: 0;
+            }
         }
         &-txt._3 {
             align-self: flex-end;
+            @include media("xs") {
+                align-self: flex-start;
+            }
         }
         &-txt._4 {
             display: inline-block;
         }
         &-txt._5 {
             align-self: flex-end;
+            @include media("xs") {
+                align-self: flex-start;
+            }
         }
         &-txt._6 {
             display: inline-block;
             margin-left: 10vw;
+            @include media("xs") {
+                margin-left: 0;
+            }
         }
     }
 }

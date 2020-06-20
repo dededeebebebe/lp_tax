@@ -117,7 +117,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .arrow {
-    margin: 25vw 0;
+    margin: 25vw 0 0;
   }
 }
 
@@ -141,7 +141,7 @@ img {
 .score-title {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
-  padding: 100px 0;
+  padding: 12vw 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -186,16 +186,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80vw;
+  width: 90vw;
   max-width: 1000px;
-  padding: 50px 100px;
+  padding: 7%;
   border: solid 10px #FFFFFF;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .score .box-txt {
-  font-size: 3rem;
+  width: 80%;
   margin-top: 20px;
+  font-size: 3rem;
+  line-height: 1.7;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -209,6 +211,7 @@ img {
 
 .score .inner-result._number {
   font-size: 16rem;
+  line-height: 1;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -283,7 +286,7 @@ img {
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
-  padding: 30px 0;
+  padding: 3vw 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -296,9 +299,22 @@ img {
   margin-left: 10vw;
 }
 
+@media only screen and (max-width: 375px) {
+  .index .outer-txt._1 {
+    margin-left: 0;
+  }
+}
+
 .index .outer-txt._3 {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media only screen and (max-width: 375px) {
+  .index .outer-txt._3 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .index .outer-txt._4 {
@@ -310,9 +326,22 @@ img {
       align-self: flex-end;
 }
 
+@media only screen and (max-width: 375px) {
+  .index .outer-txt._5 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 .index .outer-txt._6 {
   display: inline-block;
   margin-left: 10vw;
+}
+
+@media only screen and (max-width: 375px) {
+  .index .outer-txt._6 {
+    margin-left: 0;
+  }
 }
 
 .bookcontent {
@@ -474,8 +503,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 100px 0;
+  padding: 10vw 0;
   background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .member {
+    padding: 20vw 0;
+  }
 }
 
 .member .outer {
@@ -551,6 +586,12 @@ img {
   color: #000000;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .member .outer .inner:last-of-type {
+    margin-top: 20vw;
+  }
 }
 
 .footer {
