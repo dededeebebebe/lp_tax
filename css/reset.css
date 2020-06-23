@@ -38,7 +38,8 @@ body {
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
-ol[class] {
+ol[class],
+li {
   list-style: none;
 }
 
@@ -74,4 +75,9 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Customized */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
