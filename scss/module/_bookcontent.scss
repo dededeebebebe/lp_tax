@@ -20,13 +20,14 @@
         }
 
         &-title {
-            font-size: 8rem;
+            font-size: 5vw;
             padding: 50px 0;
             @include adobefont-chikumaru;
-            @include media("tb") {
-                font-size: 4rem;
+
+            @include media("xl") {
+                font-size: 8rem;
             }
-            @include media("sp") {
+            @include media("xs") {
                 font-size: 2.3rem;
             }
         }
@@ -124,7 +125,6 @@
                     font-family: $font-montserrat;
                     background-color: $color-white01;
                     text-align: center;
-                    // border: none;
                     border-radius: 45px;
                     box-shadow: 8px 8px $color-black01;
                     cursor: pointer;

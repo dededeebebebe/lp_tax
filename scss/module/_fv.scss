@@ -1,23 +1,23 @@
 .fv {
     width: 80vw;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 6vw;
+    padding-top: 5vw;
 
     @include media("sp") {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     &-title {
         display: inline-block;
-        font-size: 8rem;
+        font-size: 6vw;
         @include adobefont-chikumaru;
         line-height: 2;
 
-        @include media("tb") {
-            font-size: 6rem;
+        @include media("xl") {
+            font-size: 80px;
         }
-        @include media("sp") {
+        @include media("xs") {
             font-size: 2.6rem;
         }
         
@@ -26,6 +26,10 @@
             margin: 1vw 0;
             padding: 1vw 2vw;
             background-color: $color_white01;
+            
+            @include media("sp") {
+                padding: 2vw 2vw;
+            }
         }
     }
 }

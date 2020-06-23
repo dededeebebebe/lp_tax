@@ -37,7 +37,6 @@ body {
 }
 
 .header .inner img {
-  height: auto;
   margin-right: 14px;
 }
 
@@ -50,33 +49,33 @@ body {
 
 .fv {
   width: 80vw;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-top: 6vw;
+  padding-top: 5vw;
 }
 
 @media only screen and (max-width: 767px) {
   .fv {
-    max-width: 400px;
+    max-width: 500px;
   }
 }
 
 .fv-title {
   display: inline-block;
-  font-size: 8rem;
+  font-size: 6vw;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 2;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width: 980px) {
   .fv-title {
-    font-size: 6rem;
+    font-size: 80px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 375px) {
   .fv-title {
     font-size: 2.6rem;
   }
@@ -87,6 +86,12 @@ body {
   margin: 1vw 0;
   padding: 1vw 2vw;
   background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .fv-title span {
+    padding: 2vw 2vw;
+  }
 }
 
 .arrow {
@@ -123,12 +128,18 @@ body {
 }
 
 .score-title {
-  font-size: 50px;
+  font-size: 5vw;
   font-family: "Montserrat", sans-serif;
   padding: 10vw 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 980px) {
+  .score-title {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .score-title {
     font-size: 1.9rem;
   }
@@ -183,65 +194,89 @@ body {
   }
 }
 
-.score .box-txt {
-  width: 80%;
-  margin-top: 5vw;
-  font-size: 3rem;
-  line-height: 1.7;
-  font-family: fot-tsukubrdgothic-std,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@media only screen and (max-width: 767px) {
-  .score .box-txt {
-    font-size: 1.8rem;
-    margin-top: 0;
-    padding: 10% 0;
-  }
-}
-
-.score .inner {
+.score .box .inner {
   text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
-  .score .inner {
+  .score .box .inner {
     width: 70%;
   }
 }
 
-.score .inner-result._number {
-  font-size: 16rem;
+.score .box .inner-result._number {
+  font-size: 15vw;
   line-height: 1;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-@media only screen and (max-width: 767px) {
-  .score .inner-result._number {
+@media only screen and (min-width: 980px) {
+  .score .box .inner-result._number {
+    font-size: 16rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .score .box .inner-result._number {
     font-size: 8rem;
   }
 }
 
-.score .inner-result._chara {
-  font-size: 10rem;
+.score .box .inner-result._chara {
+  font-size: 10vw;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-@media only screen and (max-width: 767px) {
-  .score .inner-result._chara {
+@media only screen and (min-width: 980px) {
+  .score .box .inner-result._chara {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .score .box .inner-result._chara {
     font-size: 5rem;
   }
 }
 
-.score .inner img {
+.score .box .inner img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 20px;
+}
+
+.score .box-txt {
+  width: 80%;
+  margin-top: 5vw;
+  font-size: 3vw;
+  line-height: 1.7;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 980px) {
+  .score .box-txt {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .score .box-txt {
+    font-size: 4vw;
+    margin-top: 0;
+    padding: 10% 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .score .box-txt {
+    font-size: 1.8rem;
+  }
 }
 
 .index {
@@ -296,14 +331,20 @@ body {
 }
 
 .index .outer-txt {
-  font-size: 3rem;
+  font-size: 4vw;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
   padding: 3vw 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 980px) {
+  .index .outer-txt {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .index .outer-txt {
     font-size: 1.6rem;
   }
@@ -403,20 +444,20 @@ body {
 }
 
 .bookcontent .outer-title {
-  font-size: 8rem;
+  font-size: 5vw;
   padding: 50px 0;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width: 980px) {
   .bookcontent .outer-title {
-    font-size: 4rem;
+    font-size: 8rem;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 375px) {
   .bookcontent .outer-title {
     font-size: 2.3rem;
   }

@@ -4,12 +4,14 @@
     align-items: center;
 
     &-title {
-        font-size: 50px;
+        font-size: 5vw;
         font-family: $font-montserrat;
         padding: 10vw 0;
-        @include media("sp") {
+        @include media("xl") {
+            font-size: 5rem;
+        }
+        @include media("xs") {
             font-size: 1.9rem;
-            // padding-top: 0;
         }
     }
     &-title:before, &-title:after {
@@ -45,55 +47,59 @@
             border: solid 10px $color_white01;
         }
 
+        .inner {
+            text-align: center;
+    
+            @include media("sp") {
+                width: 70%;
+            }
+    
+            &-result._number {
+                font-size: 15vw;
+                line-height: 1;
+                @include adobefont-chikumaru;
+                @include media("xl") {
+                    font-size: 16rem;
+                }
+                @include media("xs") {
+                    font-size: 8rem;
+                }
+            }
+            &-result._chara {
+                font-size: 10vw;
+                @include adobefont-chikumaru;
+                @include media("xl") {
+                    font-size: 10rem;
+                }
+                @include media("xs") {
+                    font-size: 5rem;
+                }
+            }
+            img {
+                object-fit: cover;
+                height: 20px;
+            }
+        }
+
         &-txt {
             width: 80%;
             margin-top: 5vw;
-            font-size: 3rem;
+            font-size: 3vw;
             line-height: 1.7;
             @include adobefont-chikumaru;
+            
+            @include media("xl") {
+                font-size: 3rem;
+            }
             @include media("sp") {
-                font-size: 1.8rem;
+                font-size: 4vw;
                 margin-top: 0;
                 padding: 10% 0;
             }
+            @include media("xs") {
+                font-size: 1.8rem;
+            } 
         }
 
     }
-
-    .inner {
-        text-align: center;
-
-        @include media("sp") {
-            width: 70%;
-        }
-
-        &-result._number {
-            font-size: 16rem;
-            line-height: 1;
-            @include adobefont-chikumaru;
-            @include media("sp") {
-                font-size: 8rem;
-                }
-            }
-        &-result._chara {
-            font-size: 10rem;
-            @include adobefont-chikumaru;
-            @include media("sp") {
-                font-size: 5rem;
-            }
-        }
-        img {
-            object-fit: cover;
-            height: 20px;
-        }
-    }
-    // .inner:after {
-    //     content: '';
-    //     display: inline-block;
-    //     width: 100%;
-    //     height: 10px;
-    //     background-image: url(../img/bg-slash.png);
-    //     background-size: contain;
-    //     vertical-align: middle;
-    // }
 }

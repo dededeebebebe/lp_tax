@@ -27,10 +27,13 @@
             }
         }
         &-txt {
-            font-size: 3rem;
+            font-size: 4vw;
             @include adobefont-chikumaru;
             padding: 3vw 0;
-            @include media("sp") {
+            @include media("xl") {
+                font-size: 3rem;
+            }
+            @include media("xs") {
                 font-size: 1.6rem;
             }
         }

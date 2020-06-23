@@ -1,8 +1,10 @@
 $breakpoint: (
     xs: "only screen and (max-width: 375px)",
     sp: "only screen and (max-width: 767px)",
-    tb: "only screen and (max-width: 980px)"
+    tb: "only screen and (max-width: 980px)",
+    xl: "only screen and (min-width: 980px)", //min-width
 );
+
 
 @mixin media ($device) {
     @media #{map-get($breakpoint, $device)} {
