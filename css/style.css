@@ -1,9 +1,4 @@
 @charset "UTF-8";
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -13,18 +8,6 @@ body {
   letter-spacing: 0.08em;
   color: color_black01;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-}
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 .wrap {
@@ -54,6 +37,7 @@ img {
 }
 
 .header .inner img {
+  height: auto;
   margin-right: 14px;
 }
 
@@ -305,6 +289,12 @@ img {
   margin-left: 10vw;
 }
 
+@media only screen and (max-width: 980px) {
+  .index .outer .box img._2 {
+    margin-left: 5vw;
+  }
+}
+
 .index .outer-txt {
   font-size: 3rem;
   font-family: fot-tsukubrdgothic-std,sans-serif;
@@ -360,6 +350,12 @@ img {
 .index .outer-txt._6 {
   display: inline-block;
   margin-left: 10vw;
+}
+
+@media only screen and (max-width: 980px) {
+  .index .outer-txt._6 {
+    margin-left: 2vw;
+  }
 }
 
 @media only screen and (max-width: 375px) {

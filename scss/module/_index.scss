@@ -20,7 +20,10 @@
                 margin-left: 5vw;
             }
             img._2 {
-                margin-left: 10vw;   
+                margin-left: 10vw;
+                @include media("tb") {
+                margin-left: 5vw;
+                }
             }
         }
         &-txt {
@@ -55,6 +58,9 @@
         &-txt._6 {
             display: inline-block;
             margin-left: 10vw;
+            @include media("tb") {
+                margin-left: 2vw;
+            }
             @include media("xs") {
                 margin-left: 0;
             }
